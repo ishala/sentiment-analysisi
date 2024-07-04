@@ -4,10 +4,10 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 from tensorflow.keras.preprocessing.text import Tokenizer
 
 # Import model
-with open('model/model.pkl', 'rb') as mod:
+with open('models/model.pkl', 'rb') as mod:
     model = pickle.load(mod)
 # Import Tokenizer
-with open('model/tokenizer.pkl', 'rb') as tok:
+with open('models/tokenizer.pkl', 'rb') as tok:
     tokenizer = pickle.load(tok)
 
 EMBEDDING_DIM = 100
